@@ -7,8 +7,14 @@ host=""
 db_name=""
 
 # Other options
-backup_path="./"
+backup_path="./backups"
 date=$(date +"%d-%b-%Y")
+
+# Create folder if doesn't exist
+if [ ! -d ./backups ] 
+then
+    mkdir -p ./backups
+fi
 
 # Set default file permissions
 umask 177
