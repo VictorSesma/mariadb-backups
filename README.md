@@ -1,6 +1,8 @@
 # mariadb-backups
 
-Super easey script to make security copies of DB. This verision is inspired by [this](https://simon-davies.name/bash/backing-up-mysql-databases) article
+Super easey script to make security copies of DB. This verision is inspired by [this](https://simon-davies.name/bash/backing-up-mysql-databases) article.
+
+The script will delete all the back-ups after 30 days.
 
 ## How to install
 
