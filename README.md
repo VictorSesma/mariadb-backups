@@ -12,3 +12,8 @@ The script will delete all the back-ups after 30 days.
 4. Execute permissions to your sciprt: `sudo chmod +x backup_script.sh`
 5. Test with `sh backup_script.sh`
 6. Add the CRON Job to your user
+
+## Example of DB comands:
+
+1. Create a backup account: `create user 'backup'@'localhost' IDENTIFIED BY password 'password';`
+2. Grant permissions to the database you want to copyp: `GRANT LOCK TABLES, SELECT, SHOW VIEW, EVENT ON database.* TO 'backup'@'localhost';`
