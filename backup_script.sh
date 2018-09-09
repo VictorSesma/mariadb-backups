@@ -1,13 +1,13 @@
 #!/bin/bash
 
 # Database credentials
-user="leviatan89"
-password="password"
-host="localhost"
-db_name="test1"
+user=""
+password=""
+host=""
+db_name=""
 
 # Other options
-backup_path="/home/leviatan89/dev/mariabackups"
+backup_path="./"
 date=$(date +"%d-%b-%Y")
 
 # Set default file permissions
