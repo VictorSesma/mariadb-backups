@@ -1,9 +1,9 @@
 #!/bin/bash
 
 # Database credentials
-user="leviatan89"
-password="password"
-host="127.0.0.1"
+user=""
+password=""
+host=""
 
 # Other options
 backup_path="./backups"
