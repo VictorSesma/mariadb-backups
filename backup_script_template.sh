@@ -1,10 +1,9 @@
 #!/bin/bash
 
 # Database credentials
-user=""
-password=""
-host=""
-db_name=""
+user="leviatan89"
+password="password"
+host="127.0.0.1"
 
 # Other options
 backup_path="./backups"
@@ -20,7 +19,7 @@ fi
 umask 177
 
 # Dump database into SQL file
-mysqldump --user=$user --password=$password --host=$host $db_name > $backup_path/$db_name-$date.sql
+mysqldump --single-transaction --quick --lock-tables=false --user=$user --password=$password --host=$host --all-databases> $backup_path/dump-$date.sql
 
-# Delete files older than 30 days
-find $backup_path/* -mtime +30 -exec rm {} \;
+# Delete files older than 7 days
+find $backup_path/* -mtime +7 -exec rm {} \;
